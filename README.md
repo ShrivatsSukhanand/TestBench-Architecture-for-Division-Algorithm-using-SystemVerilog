@@ -2,8 +2,7 @@ Enhanced the testbench architecture I used for the 8-bit comparator to verify a 
 
 The scoreboard computes the expected quotient and remainder internally using SystemVerilog's / and % operators, packs them into a 34-bit result, and compares against the DUT output — reporting PASS or FAIL for each transaction.
 
-The testbench handles variable-latency FSM-based designs by synchronising on a valid signal asserted when the FSM reaches its terminal state, ensuring the monitor captures only settled, valid results.
-
+The testbench handles variable-latency FSM-based designs by synchronising on a valid signal asserted when the FSM reaches its terminal state, ensuring the monitor captures only settled, valid results. Debugged with assistance from Google AI and Claude
 It can be tested on EDA Playground using Aldec Riviera-PRO 2025.04 — (EDA Plaground)[https://www.edaplayground.com/x/fiAu]
 
 Output screenshot is attached below for 20 Transactions among which all have passed:
