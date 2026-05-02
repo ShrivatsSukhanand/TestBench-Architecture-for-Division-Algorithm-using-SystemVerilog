@@ -1,4 +1,4 @@
-Enhanced the testbench architecture I used for the 8-bit comparator to verify a 17-bit signed non-restoring division algorithm. Introduced clocking blocks for synchronised signal sampling, and integrated a monitor and scoreboard for self-checking. 
+Enhanced the testbench architecture I used for the 8-bit comparator to verify the 17-bit signed non-restoring division algorithm design I implemented. Introduced clocking blocks for synchronised signal sampling, and integrated a monitor and scoreboard for self-checking. 
 
 The scoreboard computes the expected quotient and remainder internally using SystemVerilog's / and % operators, packs them into a 34-bit result, and compares against the DUT output — reporting PASS or FAIL for each transaction.
 
